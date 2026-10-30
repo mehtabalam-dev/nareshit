@@ -1,0 +1,27 @@
+package arrayPrograms;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ReverseAnArray 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter array size : ");
+		int size = sc.nextInt();
+		int[] a = new int[size];
+		System.out.println("Enter array elements one by onen: ");
+		for(int i = 0; i<=a.length-1;i++)
+		{
+			a[i] = sc.nextInt();
+		}
+		int [] b = new int[a.length];
+		for(int i = 0; i<=a.length-1;i++) 
+		{
+			b[i] = a[(a.length-1)-i];
+		}
+		System.out.println("Result = "+Arrays.toString(b));
+	}
+	
+}

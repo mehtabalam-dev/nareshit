@@ -1,0 +1,16 @@
+package collectionsPrograms;
+
+import java.util.Stack;
+
+public class StackQsn02 
+{
+	public static void main(String[] args)
+	{
+		Stack<Integer> stack = new Stack<Integer>();
+		stack.push(5);
+		stack.push(10);
+		stack.push(15);
+		stack.pop();
+		System.out.println(stack);
+	}
+}
